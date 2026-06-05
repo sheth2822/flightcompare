@@ -1,7 +1,10 @@
-UPDATE REQUIRED
+Flight Compare Pro v5
 
-Open index.html and replace:
+Included:
+- Travelpayouts verification script
+- Travelpayouts White Label script (wl_id=18394)
+- tpwl-search container
+- tpwl-tickets container
 
-https://YOUR-WHITELABEL-URL-HERE
-
-with the actual Travelpayouts White Label URL from your dashboard.
+Upload index.html and style.css to GitHub.
+Vercel will redeploy automatically.

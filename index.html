@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Flight Compare Pro</title>
 
+<!-- Travelpayouts Verification Script -->
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
 (function () {
     var script = document.createElement("script");
@@ -14,30 +15,39 @@
 })();
 </script>
 
+<!-- Travelpayouts White Label Flight Search -->
+<script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
+(function () {
+    var script = document.createElement("script");
+    script.async = 1;
+    script.type = "module";
+    script.src = "https://tpscr.com/wl_web/main.js?wl_id=18394";
+    document.head.appendChild(script);
+})();
+</script>
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-<h1>Flight Compare Pro</h1>
-<p>Live flight search integration ready.</p>
+    <h1>Flight Compare Pro</h1>
+    <p>Compare airline prices and find the best deal.</p>
 </header>
 
 <div class="container">
-<div class="search-box">
-<h2>Search Real Flights</h2>
-<p>Replace the URL below with your Travelpayouts White Label URL.</p>
 
-<a href="https://YOUR-WHITELABEL-URL-HERE"
-   target="_blank"
-   class="book-btn">
-   Search Real Flights
-</a>
+    <div class="hero">
+        <h2>Search Flights Worldwide</h2>
+        <p>Powered by Travelpayouts White Label Search</p>
+    </div>
 
-<p style="margin-top:15px;">
-Example:
-https://flightcompare.travelpayouts.com
-</p>
-</div>
+    <div id="tpwl-search"></div>
+
+    <div class="spacer"></div>
+
+    <div id="tpwl-tickets"></div>
+
 </div>
 
 </body>
