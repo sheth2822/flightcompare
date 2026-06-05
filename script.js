@@ -8,7 +8,6 @@ const flights=[
 ];
 
 flights.sort((a,b)=>a.price-b.price);
-
 const cheapest=flights[0];
 
 document.getElementById('bestDeal').innerHTML=`
@@ -22,8 +21,7 @@ const tbody=document.querySelector('#results tbody');
 tbody.innerHTML='';
 
 flights.forEach(f=>{
-tbody.innerHTML+=`
-<tr>
+tbody.innerHTML+=`<tr>
 <td>${f.airline}</td>
 <td>$${f.price}</td>
 <td>${f.stops}</td>
