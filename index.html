@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flight Compare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Flight Compare</h1>
+<p>Find and compare airline fares.</p>
+</header>
+
+<div class="container">
+  <div class="search-box">
+    <input id="from" placeholder="From (e.g. SAT)">
+    <input id="to" placeholder="To (e.g. BOM)">
+    <input type="date" id="depart">
+    <button onclick="searchFlights()">Search Flights</button>
+  </div>
+
+  <table id="results">
+    <thead>
+      <tr><th>Airline</th><th>Price</th><th>Stops</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
