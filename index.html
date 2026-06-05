@@ -19,35 +19,26 @@
 <body>
 <header>
 <h1>Flight Compare Pro</h1>
-<p>Compare round-trip airline fares and find the best deal.</p>
+<p>Live flight search integration ready.</p>
 </header>
 
 <div class="container">
 <div class="search-box">
-<input id="from" placeholder="From Airport (SAT)">
-<input id="to" placeholder="To Airport (BOM)">
-<label>Departure Date</label>
-<input type="date" id="departureDate">
-<label>Return Date</label>
-<input type="date" id="returnDate">
-<button onclick="searchFlights()">Search Flights</button>
+<h2>Search Real Flights</h2>
+<p>Replace the URL below with your Travelpayouts White Label URL.</p>
+
+<a href="https://YOUR-WHITELABEL-URL-HERE"
+   target="_blank"
+   class="book-btn">
+   Search Real Flights
+</a>
+
+<p style="margin-top:15px;">
+Example:
+https://flightcompare.travelpayouts.com
+</p>
+</div>
 </div>
 
-<div id="bestDeal"></div>
-
-<table id="results">
-<thead>
-<tr>
-<th>Airline</th>
-<th>Price</th>
-<th>Stops</th>
-<th>Book</th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
